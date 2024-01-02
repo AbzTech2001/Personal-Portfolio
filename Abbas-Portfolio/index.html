@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./images/Favicon.ico" />
+    <link rel="stylesheet" href="./font-6/css/all.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" alt="logo" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#certification">Certification</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <!-- <p>Software Developer</p> -->
+          <h1>Hi, I am <span> Javith Abbas S B</span> <br />from Chennai</h1>
+        </div>
+      </div>
+    </header>
+    <!-- about -->
+    <section id="About">
+      <div class="container">
+        <div class="row">
+          <div class="About-col-1">
+            <img src="images/Profile.png" alt="user-pic" />
+          </div>
+          <div class="About-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hi, This is Javith Abbas S B. I have completed MCA in Meenakshi
+              college of engineering, I am excelled in AWS, Java, SQL and
+              Front-end(HTML,CSS & Js). I have very good self aspiration level
+              that dosen't make me to fall and I am good at organizing,
+              communication and cope with people very well.
+            </p>
+            <div class="tab-title">
+              <p class="tab-links active" onclick="opentab('skills')">SKILLS</p>
+              <p class="tab-links" onclick="opentab('experience')">
+                EXPERIENCE
+              </p>
+              <p class="tab-links" onclick="opentab('education')">EDUCATION</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Core Java</span><br />Excellent in java programing
+                </li>
+                <li>
+                  <span>AWS Services </span><br />S3 bucket, Ec2 instance,
+                  CloudWatch
+                </li>
+                <li><span>SQL</span><br />Good in writing queries</li>
+                <li>
+                  <span>Git & Github</span><br />Good in version control and
+                  repo management
+                </li>
+                <li>
+                  <span>Front-end</span><br />Html5, Css3, JavaScript, ES6
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>Fresher</span><br />Looking for the oppertunity</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2021-2023</span><br />MCA-Meenakshi College of
+                  Engineering
+                </li>
+                <li><span>2018-2021</span><br />BCA-The New College</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- certification -->
+    <section id="certification">
+      <div class="container">
+        <h1 class="sub-title">My Certifications</h1>
+        <div class="certification-list">
+          <div>
+            <i class="fa-solid fa-cloud"></i>
+            <h2>AWS</h2>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt autem maiores corrupti laborum necessitatibus, fugiat ex itaque accusamus molestiae beatae?</p> -->
+            <a
+              href="https://drive.google.com/file/d/1G2U71jDORiLu71U9apmuSb9DknvHavpR/view?usp=sharing"
+              target="_blank"
+              >View Certificate</a
+            >
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Bootstrap4</h2>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt autem maiores corrupti laborum necessitatibus, fugiat ex itaque accusamus molestiae beatae?</p> -->
+            <a
+              href="https://drive.google.com/file/d/1QSiPa_PFx46ezqv-FcImnCabwJbSjTls/view?usp=sharing"
+              target="_blank"
+              >View Certificate</a
+            >
+          </div>
+          <div>
+            <i class="fa-solid fa-map"></i>
+            <h2>Agile Methodology</h2>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt autem maiores corrupti laborum necessitatibus, fugiat ex itaque accusamus molestiae beatae?</p> -->
+            <a
+              href="https://drive.google.com/file/d/1WVCoIyPjZ1aroBvXM6Eaqk3Ntmg0IJrl/view?usp=sharing"
+              target="_blank"
+              >View Certificate</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- projects -->
+    <section id="project">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="./images/I-D-Project.jpg" alt="project1" />
+            <div class="layer">
+              <h2>
+                Intrustion Detection prediction <br />using Machine Learning
+              </h2>
+              <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus cum mollitia ut, atque excepturi eos.</p> -->
+              <a
+                target="_blank"
+                href="https://github.com/AbzTech2001/Intrusion-detection-prediction-usingML"
+              >
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/weather-img1.jpg" alt="project2" />
+            <div class="layer">
+              <h2>Weather App</h2>
+              <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus cum mollitia ut, atque excepturi eos.</p> -->
+              <a target="_blank" href="https://javithweatherapp.netlify.app"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/todo-img2.jpg" alt="project2" />
+            <div class="layer">
+              <h2>To-Do list App</h2>
+              <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus cum mollitia ut, atque excepturi eos.</p> -->
+              <a target="_blank" href="https://javi-todo.netlify.app"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/passwordGenerator.png" alt="project3" />
+            <div class="layer">
+              <h2>Password Generator App</h2>
+              <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus cum mollitia ut, atque excepturi eos.</p> -->
+              <a target="_blank" href="https://javi-pwdgenerator.netlify.app"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i>javithabbas8501@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i>7358584399</p>
+            <div class="social-icons">
+              <a
+                href="https://www.linkedin.com/in/javithaabbas01/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <!-- <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a> -->
+              <a href="https://github.com/AbzTech2001" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <a href="images/JAVITH ABBAS SB.pdf" download class="btn btn2"
+              >Download Cv</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input
+                type="text"
+                name="Name"
+                placeholder="Enter your name"
+                required
+              />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Enter your email-id"
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="copyrights">
+        <p>
+          copyrights 2023 <i class="fa-regular fa-copyright"></i> Javith Abbas S
+          B
+        </p>
+      </div>
+    </footer>
+    <!-- javaScript -->
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var side = document.getElementById("sidemenu");
+      function openmenu() {
+        side.style.right = "0";
+      }
+      function closemenu() {
+        side.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwPruE3PovRxgl5rS4G8IaX4zB-0OI12x2VZ6msC2HIzhH-1JGyncmg6yZlEOlBiKPl/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message Sent Successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
